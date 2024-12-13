@@ -20,7 +20,7 @@ fn main() {
     println!("Signed: {signed}");
     println!("Unsigned: {unsigned}");
 
-    // Floating-point numbers
+    // Float-pointing numbers
     let float: f32 = 2.0;
     let double: f64 = 2.0000000000000001;
     println!("Float: {float}");
@@ -28,7 +28,7 @@ fn main() {
 
     // Boolean
     let is_even = 0 % 2;
-    println!("Even: {is_even}");
+    println!("Zero: {is_even}");
 
     // Char
     let dad ='👨';
