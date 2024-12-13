@@ -71,3 +71,57 @@ Indexes are accessed using square brackets operator followed by a selected array
 Type annotation supports length fixing.
 
 Declaring it with a number separated by a semicolon and number, actually repeats N times.
+
+## Functions
+They are "prevalent", most used function is main.
+
+Their names can be defined with lowercase and underscores, snake_case.
+
+Rust doesn't care about their definition orders.
+
+### Parameters
+They are "special variables" which deliberately need to be part of a function and contain
+a data type.
+
+### Statements and expressions
+Statements perform actions and don't return values, expressions do.
+
+### Return functions
+You must type a function return with -> operator and a following data type.
+
+Last statement must not be followed by semicolon, so Rust infers it as the return.
+
+## Comments
+Lines ignored by compiller, used for code better reading.
+
+## Control Flow
+Statements that control whether a block of code executes or not based in conditions.
+
+### if expressions
+"if condition is met, run this block of code, if the condition is not met, do not run this
+line of code".
+
+Condition must not be followed by parenthesis.
+
+### else if expressions
+You can chain multiple else if statements.
+
+### if let expressions
+It works like a ternary operator, without ? and : operators, but if and else instead.
+
+### loop statement
+It's a while true equivalent, runs a block of code repeatedly till you explicitly break.
+
+### Returning loop statements
+You can return a value from a loop statement and then store it in a variable.
+
+### Nested loop statements
+You must need disambiguate them with a label, can be a string.
+
+### While loop
+Runs a block of code repeatedly whilst a condition is met.
+
+## For loop
+You can use a traditional for-in statement to loop through a collection, for example.
+
+You also can use a range in a for-in.
