@@ -52,6 +52,17 @@ fn main() {
     // Control flow
     let is_palindrome = palindrome(313);
     println!("313 is palindrome: {is_palindrome}");
+
+    // Challenges:
+    let fahrenheit = to_fahrenheit(32.0);
+    let celsius = to_celsius(64.0);
+
+    println!("32 Cº -> {fahrenheit} Fº");
+    println!("64 Fº -> {celsius} Cº");
+
+    let fibonacci_result = fibonacci(4);
+    println!("F(4) = {fibonacci_result}");
+
 }
 
 fn square(num: i32) -> i32 {
@@ -71,4 +82,25 @@ fn palindrome(num: i32) -> bool {
     }
 
     original == reversed
+}
+
+fn to_fahrenheit(celsius: f64) -> f64 {
+    (celsius * 1.8) + 32.0
+}
+
+fn to_celsius(fahrenheit: f64) -> f64 {
+    (fahrenheit - 32.0) / 1.8
+}
+
+fn fibonacci(n: i32) -> i32 {
+    let mut previous = 0;
+    let mut current = 1;
+
+    for _ in 1..n {
+        let next = previous + current;
+        previous = current;
+        current = next;
+    }
+
+    current
 }
