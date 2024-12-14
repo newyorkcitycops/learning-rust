@@ -44,4 +44,31 @@ fn main() {
     let numbers = [3; 5];
     println!("{:?}", numbers);
     println!("Number: {0}", numbers[1]);
+
+    // Functions
+    let bits = square(32);
+    println!("{bits} bits");
+
+    // Control flow
+    let is_palindrome = palindrome(313);
+    println!("313 is palindrome: {is_palindrome}");
+}
+
+fn square(num: i32) -> i32 {
+    num * 2
+}
+
+fn palindrome(num: i32) -> bool {
+    let original = num;
+    let mut reversed = 0;
+    let mut remainder;
+    let mut n = num;
+
+    while n != 0 {
+        remainder = n % 10;
+        reversed = reversed * 10 + remainder;
+        n /= 10
+    }
+
+    original == reversed
 }
