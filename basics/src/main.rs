@@ -20,7 +20,7 @@ fn main() {
     println!("Signed: {signed}");
     println!("Unsigned: {unsigned}");
 
-    // Float-pointing numbers
+    // Floating-point numbers
     let float: f32 = 2.0;
     let double: f64 = 2.0000000000000001;
     println!("Float: {float}");
@@ -62,7 +62,6 @@ fn main() {
 
     let fibonacci_result = fibonacci(4);
     println!("F(4) = {fibonacci_result}");
-
 }
 
 fn square(num: i32) -> i32 {
