@@ -23,7 +23,7 @@ Every value allocated in memory is dropped whenever they go out of scope.
 ### Clone
 There's a way of deeply copying values in Rust, clone method.
 
-Shallow copies can be done with values like integers.
+Shallow copies can be done with moving values like integers.
 
 ## References
 They are different from pointers, references always point to valid values.

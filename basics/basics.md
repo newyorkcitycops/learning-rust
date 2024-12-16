@@ -18,7 +18,7 @@ their data types in declaration.
 Values are categorized by data types. There are two subsets of them: scalar and compound.
 
 ### Scalar
-Represents a single value. There are integers, float-pointing numbers, booleans and chars.
+Represents a single value. There are integers, floating-point numbers, booleans and chars.
 
 #### Integers
 Numbers can be signed (with a sign) and unsigned, as if they were written in paper.
@@ -95,7 +95,7 @@ Last statement must not be followed by semicolon, so Rust infers it as the retur
 Lines ignored by compiller, used for code better reading.
 
 ## Control Flow
-Statements that control whether a block of code executes or not based in conditions.
+Statements that control whether a block of code executes or not based in conditions
 
 ### if expressions
 "if condition is met, run this block of code, if the condition is not met, do not run this
